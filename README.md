@@ -1,7 +1,10 @@
 # ResponseTimeSeat
 Este repositorio contiene los códigos necesarios para
 realizar el tiempo de respuesta general y ajustado para
-las redes sociales de SEAT. Twitter y Facebook.
+las redes sociales de SEAT: 
+
+* [Twitter](https://twitter.com/seat_mexico?lang=es)
+* [Facebook](https://www.facebook.com/SEAT.Mexico/)
 
 # Lenguajes de programación 
 
