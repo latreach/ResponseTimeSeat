@@ -31,10 +31,10 @@ for i in mentions:
 ##Creado por Fernando Dorantes Nieto
 
 ### Conexión de la API --------------------------------------
-consumer_key    = "vDfPjIl7fRMjwHwYfj0rz5Vid"
-consumer_secret = "W5ojxlgXd9xTo7oVX95Ni3nbB6UrkODMtfSe3F6FF2NcEbAgW"
-access_token    ="137735852-QmQl1gg51p8Za2W68d4akeH0MbaH7VNOSc9Y5KOK"
-access_token_secret = "gFAJhf8iuwh1JIdYUFFxTwnLSgouStPrxnnAbEs2bfRMt"
+consumer_key    = "tu consumer"
+consumer_secret = "tu consumer_secret"
+access_token    = "tu_access_token"
+access_token_secret = "tu_access_token_secret"
 auth =  tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
 api = tweepy.API(auth)

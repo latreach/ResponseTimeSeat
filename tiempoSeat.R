@@ -12,8 +12,8 @@ c("dplyr", "tidyr","lubridate","twitteR","Rfacebook","ggplot2",
 
 
 # Conexión facebook API ---------------------------------------------------
-fb_oauth <- fbOAuth(app_id="1611650985792093", 
-                    app_secret="35ff99b85e4bf364b35faeb0a850dbd4", 
+fb_oauth <- fbOAuth(app_id="tu_app_id", 
+                    app_secret="tu_app_secret", 
                     extended_permissions = TRUE)
 save(fb_oauth, file="fb_oauth")
 load("fb_oauth")
@@ -21,10 +21,10 @@ idFB_seat = 113144262054871
 
 
 # Conexión Twitter Cuenta SEAT --------------------------------------------------------
-key          = "vDfPjIl7fRMjwHwYfj0rz5Vid"
-secret       = "W5ojxlgXd9xTo7oVX95Ni3nbB6UrkODMtfSe3F6FF2NcEbAgWB"
-access_token = "137735852-QmQl1gg51p8Za2W68d4akeH0MbaH7VNOSc9Y5KOK"
-secret_token = "gFAJhf8iuwh1JIdYUFFxTwnLSgouStPrxnnAbEs2bfRMt"
+key          = "tu_key"
+secret       = "tu_key_secret"
+access_token = "tu_access_token"
+secret_token = "tu_access_token_secret"
 setup_twitter_oauth(key, secret, access_token, secret_token)
 user         = "SEAT_Mexico"
 useriD       = 137735852
