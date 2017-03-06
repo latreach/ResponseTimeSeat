@@ -51,13 +51,15 @@ horasHorasMin = function(hora){
 
 x= "2017-02-05"
 #rm(x)
-is.Festivo = function(x){
+is.Festivo = function(x) {
+  ####dias oficiales tomados de http://www.diputados.gob.mx/LeyesBiblio/pdf/125_120615.pdf
   festivos = c("-01-01","-02-05", "-03-21","-05-01", "-09-16",
                "-11-20","-12-25")
   x = as.Date(x)
   anioComparativo = lubridate::year(x)
-  festivosCompara = paste(anioComparativo, festivos, sep="")
+  festivosCompara = paste(anioComparativo,festivos, sep="")
   especiales = festivosCompara[c(2,3,6)]
+  
   extras = lapply(especiales,function(d){
     inicio = paste(year(d), month(d), 1, sep="-")
     final = paste(year(d), month(d)+1, 1, sep="-")
@@ -68,32 +70,28 @@ is.Festivo = function(x){
       secuencia  = secuencia[1]
     }else{secuencia = secuencia[3]}
   })
+  
   extras= unlist(extras)
   extras = as.Date(as.POSIXct(extras, origin="1970-01-01"))
-  
   if(wday(especiales[1])!=2){
-    festivosCompara= c(extras[1], as.Date(festivosCompara))
+    festivosCompara= c(extras[1], as.Date(festivosCompara[-2]))
   }
   if(wday(especiales[2])!=2){
-  festivosCompara= c(extras[2], as.Date(festivosCompara))
+    festivosCompara= c(extras[2], as.Date(festivosCompara[-3]))
   }
   if(wday(especiales[3])!=2){
-     festivosCompara= c(extras[3], as.Date(festivosCompara))
+    festivosCompara= c(extras[3], as.Date(festivosCompara[-6]))
   }
   # if(wday(especiales[1])|wday(especiales[2])|wday(especiales[3])!=2){
   #   festivosCompara= c(extras, as.Date(festivosCompara))
-  #   print(festivosCompara)
   # }
   z = festivosCompara[festivosCompara==x]
-  print(z)
-  
-  if(identical(z, character(0))==T){
-       "Laboral"
-    }else{"Festivoas"}
-
+  z = as.character(z)
+  z = ifelse(identical(z, character(0)),
+             FALSE,TRUE)
+  return(z)
 }
-
-is.Festivo("2016-01-01")
+is.Festivo("2019-12-25")
 
 
 separado = function(x){
