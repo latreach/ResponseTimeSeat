@@ -1,0 +1,45 @@
+####Direcciones de enlaces a llamadas de YouTube
+access_token = AIzaSyD-oZ8AqsVMJ7SzXd0yfpRTAzJaplegaB0
+
+##Información de canal
+idCanalSeat = UC-zZEHZcc6AzBZ3iu55Eegg
+
+https://www.googleapis.com/youtube/v3/channels?id=UC-zZEHZcc6AzBZ3iu55Eegg&part=statistics,contentDetails,topicDetails&key=AIzaSyD-oZ8AqsVMJ7SzXd0yfpRTAzJaplegaB0
+
+##Todas las playlist de un canal
+https://www.googleapis.com/youtube/v3/playlists?part=snippet&channelId=UC-zZEHZcc6AzBZ3iu55Eegg&key=AIzaSyD-oZ8AqsVMJ7SzXd0yfpRTAzJaplegaB0&fields=items(id)
+
+
+
+##Todas las secciones del canal
+https://www.googleapis.com/youtube/v3/channelSections?part=snippet&channelId=UC-zZEHZcc6AzBZ3iu55Eegg&key=AIzaSyD-oZ8AqsVMJ7SzXd0yfpRTAzJaplegaB0&fields=items(id)
+
+##Todos los videos de una playlist
+playlistPrueba = PLBlJWsvSG-QRbif7ysqpJKsQNWAQLPAeO
+
+https://www.googleapis.com/youtube/v3/playlistItems?part=snippet,contentDetails&playlistId=PLBlJWsvSG-QRbif7ysqpJKsQNWAQLPAeO&key=AIzaSyD-oZ8AqsVMJ7SzXd0yfpRTAzJaplegaB0
+
+
+##Información de videos
+idVideoPrueba = dHo-qDbZRQw
+
+https://www.googleapis.com/youtube/v3/videos?id=dHo-qDbZRQw&key=AIzaSyD-oZ8AqsVMJ7SzXd0yfpRTAzJaplegaB0&fields=items(id,snippet(channelId,title,categoryId),statistics)&part=snippet,statistics,contentDetails
+
+https://www.googleapis.com/youtube/v3/videos?id=dHo-qDbZRQw&key=AIzaSyD-oZ8AqsVMJ7SzXd0yfpRTAzJaplegaB0&part=snippet,statistics,contentDetails,recordingDetails
+
+
+##Comentarios de los videos
+https://www.googleapis.com/youtube/v3/commentThreads?part=snippet,replies&videoId=dHo-qDbZRQw&key=AIzaSyD-oZ8AqsVMJ7SzXd0yfpRTAzJaplegaB0
+
+
+https://www.googleapis.com/youtube/v3/commentThreads?part=snippet,replies&videoId=dHo-qDbZRQw&key=AIzaSyD-oZ8AqsVMJ7SzXd0yfpRTAzJaplegaB0&fields=items(replies(comments),
+snippet(topLevelComment))
+
+#####pruebas
+
+
+https://www.googleapis.com/youtube/v3/playlistItems?part=snippet,contentDetails&playlistId=PLBlJWsvSG-QQa_tUDXROOwJkaYRfRxHpV&key=AIzaSyD-oZ8AqsVMJ7SzXd0yfpRTAzJaplegaB0&fields=items(contentDetails(videoId))&maxResults=50
+
+https://www.googleapis.com/youtube/v3/playlistItems?part=snippet,contentDetails&playlistId=PLBlJWsvSG-QQa_tUDXROOwJkaYRfRxHpV&key=AIzaSyD-oZ8AqsVMJ7SzXd0yfpRTAzJaplegaB0&maxResults=50&fields=items(snippet(description),contentDetails(videoId))
+
+https://www.googleapis.com/youtube/v3/playlistItems?part=snippet,contentDetails&playlistId=PLBlJWsvSG-QQa_tUDXROOwJkaYRfRxHpV&key=AIzaSyD-oZ8AqsVMJ7SzXd0yfpRTAzJaplegaB0&fields=items(contentDetails(videoId))&maxResults=50&pageToken=CDIQAA

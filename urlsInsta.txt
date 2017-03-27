@@ -1,0 +1,25 @@
+##Generar codigos y access token
+
+https://api.instagram.com/oauth/authorize/?client_id=e1921214c4f940b098e8fe6f34d6833f&redirect_uri=http://localhost:1410/&response_type=code
+https://api.instagram.com/oauth/authorize/?client_id=e1921214c4f940b098e8fe6f34d6833f&redirect_uri=http://localhost:1410/&response_type=token
+
+https://api.instagram.com/v1/users/self/?access_token=24665227.e192121.5e0c22f680154a628cf119f6dec5be76
+
+https://api.instagram.com/v1/users/self/media/recent?access_token=24665227.e192121.5e0c22f680154a628cf119f6dec5be76
+
+
+
+
+
+
+https://api.instagram.com/v1/media/1466085364090527281_24665227/?access_token=24665227.e192121.5e0c22f680154a628cf119f6dec5be76
+https://api.instagram.com/v1/media/1466085364090527281_24665227/comments?access_token=24665227.e192121.5e0c22f680154a628cf119f6dec5be76
+https://api.instagram.com/v1/media/1466085364090527281_24665227/likes?access_token=24665227.e192121.5e0c22f680154a628cf119f6dec5be76
+
+
+
+
+###Información pública ##Solo con scopes basic
+https://api.instagram.com/v1/tags/aves/media/recent?access_token=24665227.e192121.5e0c22f680154a628cf119f6dec5be76
+https://api.instagram.com/v1/users/self/follows?access_token=24665227.e192121.5e0c22f680154a628cf119f6dec5be76
+

@@ -1,3 +1,4 @@
+#encoding: utf-8
 """
 Comenzando con la obtención de Tweets 
 mensuales de la cuenta de SEAT 
@@ -17,8 +18,7 @@ from itertools import chain
 
 
 ## Ids con ayuda del respositorio-------------------------------------
-tweetCriteria =
-got.manager.TweetCriteria().setQuerySearch("SEAT_Mexico").setSince('2017-02-01').setUntil('2017-02-14')
+tweetCriteria =got.manager.TweetCriteria().setQuerySearch("SEAT_Mexico").setSince('2017-02-21').setUntil('2017-02-25')
 
 mentions = got.manager.TweetManager.getTweets(tweetCriteria)[1:5000]
 
